@@ -1,0 +1,161 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+aside {
+    flex: 0 0 2%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    flex: 0 0 70%;
+    text-align: center;
+
+}
+.content {
+    flex: 0 0 calc(70% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.gallery {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.product {
+    position: relative;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #ff9900;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.social-media a:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+section {
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+section:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    scroll-behavior: smooth;
+}
